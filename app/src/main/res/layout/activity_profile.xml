@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/my_profile_pic"
+                android:layout_width="300dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+            <TextView
+                android:id="@+id/my_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_pic"
+                android:layout_marginTop="19dp"
+                android:inputType="text"
+                android:paddingLeft="120dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Profile Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/my_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_name"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:paddingLeft="165dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="UserName"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/my_profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_username"
+android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:maxEms="15"
+                android:paddingLeft="15dp"
+                android:singleLine="false"
+                android:text="Status.................................................................."
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/my_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_status"
+                android:layout_marginTop="49dp"
+                android:inputType="text"
+                android:paddingLeft="90dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Country"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/my_profile_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_country"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:paddingLeft="90dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Date Of Birth"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/my_profile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_dob"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:paddingLeft="90dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Gender"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/my_profile_relationshipstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_profile_gender"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:paddingLeft="90dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:text="Relationship Status"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

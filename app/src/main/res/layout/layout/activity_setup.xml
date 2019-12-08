@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context=".setup">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="111dp"
+        android:layout_height="131dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="508dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/borderradius"
+        android:paddingLeft="5dp"
+        android:text="SAVE"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="392dp"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="  UserName"
+        android:inputType="text"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="319dp"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="    Full Name"
+        android:inputType="text"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+
+        android:textColorHint="#FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="248dp"
+        android:drawableLeft="@drawable/country"
+        android:ems="10"
+        android:hint="    Country"
+        android:inputType="text"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+
+    <EditText
+        android:id="@+id/Gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="176dp"
+        android:drawableLeft="@drawable/gender"
+
+        android:ems="10"
+        android:hint="   Gender"
+        android:inputType="text"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:text=" CLICK TO LOGIN."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

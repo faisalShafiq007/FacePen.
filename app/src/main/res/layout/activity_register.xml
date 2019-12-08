@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".register"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="535dp"
+
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="#cc0000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/borderradius"
+        android:paddingLeft="5dp"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="360dp"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="    Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+
+        android:textColorHint="#FFFFFF"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="285dp"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="    Password"
+        android:inputType="textPassword"
+        android:paddingStart="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="213dp"
+        android:drawableLeft="@drawable/password"
+
+        android:ems="10"
+        android:hint="   Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="35dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:text=" CLICK TO LOGIN."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

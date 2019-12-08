@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".settings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+
+        >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/settings_profile_image"
+               android:layout_width="match_parent"
+               android:layout_height="173dp"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="45dp"
+               android:src="@drawable/profile"
+               app:civ_border_color="#FFFFFF"
+               app:civ_border_width="2dp" />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/settings_profile_image"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="15dp"
+               android:id="@+id/settings_status"
+               android:layout_marginRight="40dp"
+               android:layout_marginBottom="10dp"
+               android:textColorHint="@color/white"
+               android:hint="Profile Status"
+               android:padding="40dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textStyle="bold"
+               tools:ignore="InvalidId" />
+           <EditText
+               android:id="@+id/settings_username"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_below="@+id/settings_status"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:layout_marginBottom="10dp"
+
+               android:hint="Username"
+               android:paddingLeft="5dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+
+
+
+           <EditText
+               android:id="@+id/settings_profilename"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_below="@+id/settings_username"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Profile name"
+               android:paddingLeft="5dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+           <EditText
+               android:id="@+id/settings_country"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_below="@+id/settings_profilename"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Country"
+               android:paddingLeft="5dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+           <EditText
+               android:id="@+id/settings_Dateofbirth"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_marginBottom="10dp"
+               android:layout_below="@+id/settings_country"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:hint="Date of Birth"
+               android:paddingLeft="5dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+           <EditText
+               android:id="@+id/settings_gender"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_below="@+id/settings_Dateofbirth"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:hint="Gender"
+               android:paddingLeft="5dp"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+           <EditText
+               android:id="@+id/settings_relationshipstatus"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_below="@+id/settings_gender"
+               android:layout_marginLeft="7dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginRight="7dp"
+               android:hint="Relationship Status"
+               android:paddingLeft="5dp"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/common_google_signin_btn_text_dark_default"
+               android:textColorHint="@color/white"
+               android:textStyle="bold" />
+           <Button
+               android:layout_width="220dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/settings_button"
+               android:text="Update Account Settings"
+               android:textColor="@color/white"
+               android:background="@drawable/borderradius"
+               android:layout_below="@id/settings_relationshipstatus"
+               android:layout_centerHorizontal="true"
+               android:textStyle="bold"/>
+
+
+       </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

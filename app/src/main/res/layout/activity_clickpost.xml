@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/click_post"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".clickpost">
+
+    <ImageView
+        android:id="@+id/clickpost_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="266dp"
+        app:srcCompat="@drawable/add_post"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="184dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="Description..."
+        android:textColor="#ffff"
+        tools:ignore="MissingConstraints"
+        android:maxEms="22"
+        android:singleLine="false"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <Button
+        android:id="@+id/clickpost_edit"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="113dp"
+
+        android:background="@drawable/borderradius"
+        android:text="Edit Post"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <Button
+        android:id="@+id/clickpost_delete"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/borderradius"
+        android:text="Delete Post"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

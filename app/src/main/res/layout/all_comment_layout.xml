@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comments_border"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="7dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_user_name"
+            android:text="username"
+            android:textColor="#000"
+            android:textSize="16sp"
+           android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/simple_text"
+            android:text="commented on"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_date"
+            android:text="date"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_text"
+            android:layout_marginLeft="2dp"
+            android:text="Comment text will display here"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_time"
+            android:text="time"
+            android:textAlignment="viewEnd"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimary">
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/all_users_profle_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/profile"
+        android:layout_margin="5dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:text="User Fullname"
+            android:layout_marginLeft="95dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/all_users_profile_fullname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:text="User Status"
+            android:layout_marginLeft="95dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:id="@+id/all_users_status"/>
+    </LinearLayout>
+
+</RelativeLayout>
